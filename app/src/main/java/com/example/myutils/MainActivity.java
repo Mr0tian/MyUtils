@@ -44,16 +44,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        lv = findViewById(R.id.lv);
-        buttonRec = findViewById(R.id.button_rec);
-
-        PermissionUtils.checkPermissionArray(this, permissionArray, 2);
-        adapter=new VoiceAdapter(this);
-        lv.setAdapter(adapter);
-
-        buttonRec.setEnrecordVoiceListener((length, strLength, filePath) ->
-                adapter.add(new Voice(length,strLength,filePath)));
-
     }
 
 }
