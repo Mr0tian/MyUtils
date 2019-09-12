@@ -1,2 +1,2 @@
-include ':app', ':voice', ':permission'
+include ':app', ':voice', ':permission', ':utils'
 rootProject.name='MyUtils'
