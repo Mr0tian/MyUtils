@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/whiteColor"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/mode_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginBottom="11dp"
+        android:text="出行方式"
+        android:textColor="@color/blackColor"
+        android:textSize="16sp" />
+
+    <!--选择出行方式控件(考虑下用何种样式解决)-->
+    <LinearLayout
+        android:id="@+id/select_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/mode_title"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="这是按钮"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
